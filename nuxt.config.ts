@@ -9,4 +9,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  env: {
+    simplePageWithButterCMSURL: import.meta.env
+      .NUXT_ENV_simplePageWithButterCMSURL,
+  },
 });
