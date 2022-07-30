@@ -1,9 +1,8 @@
 <script setup lang="ts">
-const butter = useButterCMS();
+const butter = await useButterCMS();
 
 const samplePage = await butter.getLandingPage();
 
-console.log(samplePage);
 const sections = {
   "lp-hero": resolveComponent("LpHero"),
   "lp-features": resolveComponent("LpFeatures"),
